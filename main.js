@@ -1,1 +1,10 @@
-// Add JS here
+function somar(event) {
+    event.preventDefault()
+    const numero1 = document.querySelector("#numero-1").valueAsNumber
+    const numero2 = document.querySelector("#numero-2").valueAsNumber
+
+    const resultado = numero1 + numero2
+
+    const paragrafoResultado = document.querySelector("#resultado")
+    paragrafoResultado.textContent = `Resultado : ${resultado}`
+}
